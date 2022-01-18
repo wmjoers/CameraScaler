@@ -13,6 +13,6 @@ public class ScreenInfo : MonoBehaviour
 
     protected void Update()
     {
-        screenInfoText.text = "Screen size: " + Screen.width + "x" + Screen.height + " Screen resolution: " + Screen.currentResolution.width + "x" + Screen.currentResolution.height + " Fullscreen: " + Screen.fullScreenMode.ToString();
+        screenInfoText.text = "Screen size: " + Screen.width + "x" + Screen.height + " Screen resolution: " + Screen.currentResolution.width + "x" + Screen.currentResolution.height + " Mode: " + Screen.fullScreenMode.ToString();
     }
 }

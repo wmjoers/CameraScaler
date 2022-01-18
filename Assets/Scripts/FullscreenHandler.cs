@@ -15,8 +15,6 @@ public class FullscreenHandler : MonoBehaviour
         lastFullscreen = Screen.fullScreen;
     }
 
-
-
     void Update()
     {
         if (Screen.fullScreen != lastFullscreen)
