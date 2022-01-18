@@ -5,8 +5,6 @@ using TMPro;
 public class ScreenInfo : MonoBehaviour
 {
     private TextMeshProUGUI screenInfoText;
-    private int lastWidth = 0;
-    private int lastHeight = 0;
 
     protected void Awake()
     {
@@ -15,11 +13,6 @@ public class ScreenInfo : MonoBehaviour
 
     protected void Update()
     {
-        if (Screen.width != lastWidth || Screen.height != lastHeight)
-        {
-            screenInfoText.text = "" + Screen.width + "x" + Screen.height; 
-            lastWidth = Screen.width;
-            lastHeight = Screen.height;
-        }
+        screenInfoText.text = "Screen size: " + Screen.width + "x" + Screen.height + " Screen resolution: " + Screen.currentResolution.width + "x" + Screen.currentResolution.height + " Fullscreen: " + Screen.fullScreenMode.ToString();
     }
 }
